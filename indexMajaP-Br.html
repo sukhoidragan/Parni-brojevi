@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Parni-Brojevi</title>
+    </head>
+
+    <body>
+        <h3>Izmedju dva parna broja (0-9) dodaje crticu.</h3>
+        
+            <script>
+                var niz = [];
+
+                for (i = 0 ; i<10 ; i++) {
+                    niz [i]= Math.floor(Math.random() * 10); /* ovo vam je sve iskopirano od M.A. i radi <za razl.od svega sto sam sama napisala>;poenta je da on nigde ni ne trazi,kao sto sam htela ja,promptom da neko unese svoj niz brojeva,nego zna niz sam i da napravi;njegovi su brojevi isli do 25,a htela sam ih jednocifrene (0 - 9) pa otud u ovom redu x10, bez +1 posle zagrade,a pre ;,da bi u nizu bilo i broja 0,sto mi je valjda i uspelo..;ovde je samo potreban klik na'refresh'i sve ce samo da se odradi */
+                    }
+
+                for ( i = 0 ; i<niz.length ; i++){                  // ovako M.A. proverava sve brojeve,vrti ih po indeksima
+                    if (niz[i] % 2 == 0  && niz[i + 1] % 2 == 0 ) { //ovde mu je uslov da i taj neki br i sledeci br do njega budu parni
+                        document.write (niz[i] + " -  ");           // ,pa ako oba jesu -> upisuje - pre tog sled.parnog
+                    } else {                                        // ,a ako nisu -> samo
+                       document.write (niz[i] + "  ");              // nastavlja ispisivanje niza neparnim brojem
+                   }
+                }
+            </script>
+    </body>
+
+</html>
