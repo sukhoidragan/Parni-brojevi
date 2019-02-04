@@ -1,2 +1,2 @@
 # Parni-brojevi
-dodaje - izmedju paarnih brojeva
+dodaje - izmedju parnih brojeva
